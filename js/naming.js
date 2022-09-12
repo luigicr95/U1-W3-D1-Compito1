@@ -21,4 +21,16 @@ function changeColor(newColor) {
   const elem = (document.getElementById("giraffe").style.backgroundColor =
     newColor);
 }
+
+function changeImage() {
+  console.log(document.getElementById("giraffe").src);
+  if (
+    document.getElementById("giraffe").src ===
+    "http://127.0.0.1:5500/giraffa.jpg"
+  ) {
+    document.getElementById("giraffe").src = "./pantera.jpg";
+  } else {
+    document.getElementById("giraffe").src = "./giraffa.jpg";
+  }
+}
 //var 12 = 'numero';
